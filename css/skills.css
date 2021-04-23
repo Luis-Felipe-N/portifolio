@@ -1,0 +1,91 @@
+.skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.card {
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    background-color: var(--black);
+    padding: 2rem;
+    border-radius: .15rem;
+    transition: .2s, border .1s ;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card i {
+    font-size: 3rem;
+    transition: .2s;
+}
+
+.card .title-card h3 {
+    color: var(--text-color);
+}
+
+.c-python .text-content h3, .c-python .title-card i {
+   color: var(--color-python);
+}
+
+.c-python:hover {
+    border: 2px solid var(--color-python);
+}
+
+.c-css .text-content h3, .c-css .title-card i {
+    color: var(--color-css);
+}
+
+.c-css:hover {
+    border: 2px solid var(--color-css);
+}
+
+.c-html .text-content h3, .c-html .title-card i {
+    color: var(--color-html);
+}
+
+.c-html:hover {
+    border: 2px solid var(--color-html);
+}
+
+.c-js .text-content h3, .title-card i {
+    color: var(--color-js);
+}
+
+.c-js:hover {
+    border: 2px solid var(--color-js);
+}
+
+
+.title-card  h3 {
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+.text-content {
+    color: var(--text-color);
+}
+
+.text-content h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.text-content p {
+    font-size: .8rem;
+}
+
+@media (max-width: 1100px) {
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+     }
+     
+}
+
+
+@mdia (max-width: 600px) {
+    .skills {
+        grid-template-columns: repeat(1, 1fr);
+     }
+     
+}
