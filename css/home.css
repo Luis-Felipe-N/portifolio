@@ -37,11 +37,12 @@
 .container-text .btn-cv {
     background-color: var(--white);
     color: var(--black);
-    font-weight: 900;
-    padding: 1rem;
+    padding: .7rem 1rem;
     margin-top: 1rem;
     display: inline-block;
     transition: .2s;
+    font-weight: 700;
+    border-radius: .2rem;
 }
 
 .container-text .btn-cv:hover {

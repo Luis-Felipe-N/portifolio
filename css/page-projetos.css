@@ -1,0 +1,14 @@
+.center {
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center h1 {
+    color: var(--white);
+}
+
+body {
+    background-color: var(--black);
+}

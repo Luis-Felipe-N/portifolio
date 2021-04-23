@@ -4,7 +4,7 @@ const tdProjetos = [
         title: 'Bot sorteio',
         link: 'https://github.com/Luis-Felipe-N/Bot-sorteio',
         text: 'O Bot Sorteio é um programa que te permite comentar em sorteios do Instagram sem muito esforço.',
-        image: '/assets/abstract-done-1.png',
+        image: '/assets/ft-botsorteio.png',
         tecnologias: ['python'], 
         porcentagem: [100]
     },
@@ -12,7 +12,7 @@ const tdProjetos = [
         title: 'Bookorama',
         link: 'https://bookorama-luis-felipe.netlify.app/',
         text: 'No Bookorama você pode listar uma série de livros para ler depois.',
-        image: '/assets/abstract-list-is-empty.png',
+        image: '/assets/ft-bookorama.png',
         tecnologias: ['js', 'html', 'css'],
         porcentagem: [43.4, 31.1, 25.5]
     },
@@ -20,7 +20,7 @@ const tdProjetos = [
         title: 'Gerador de Bordas',
         link: 'https://border-radius-generator-luis.netlify.app/',
         text: 'No Gerador de bordas você vê em tempo real sua criação e pega o código pronto.',
-        image: '/assets/example.png',
+        image: '/assets/ft-border-radius-generador.png',
         tecnologias: ['css', 'html', 'js'],
         porcentagem: [49.3, 32.5, 18.2]
     }

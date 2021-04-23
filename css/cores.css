@@ -7,3 +7,21 @@
     --color-css: #254cde;
     --color-python: #366f9e;
 }
+
+
+.c-python {
+    --color-linguagem:#366F9E;
+}
+
+.c-html {
+    --color-linguagem:#e44b27;
+}
+
+.c-css {
+    --color-linguagem: #254CDE;
+}
+
+
+.c-js {
+    --color-linguagem: #F1DA1D;
+}
