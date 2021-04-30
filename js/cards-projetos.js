@@ -70,7 +70,7 @@ const tdProjetos = [
         text: 'Um modelo de site simples para que direciona para alguma rede social.',
         image: 'https://d33wubrfki0l68.cloudfront.net/60802228754c84151e98b203/screenshot_2021-04-21-13-01-36-0000.png',
         tecnologias: ['css', 'html', 'js'],
-        porcentagem: [46.7, 43.2, 10.1]
+        porcentagem: [60.9, 36.2, 2.9]
     }
 ]
 
@@ -139,62 +139,43 @@ function criarCards() {
 };
 
 function criarBarras(listaBarras, porcentagens) {
-    let cti = []
-    let cnt = []
+    let containerTempBarras = []
+    let tempBarras = []
     let ul = document.createElement('ul')
 
-    // console.log(listaBarras, porcentagens)
     listaBarras.forEach((e, i) => {
+        let nomeCor = e
+        let nomeLinguagem = e
+
         let barra = document.createElement('span')
-        barra.setAttribute('class', `progresso-${e}`)
-        cnt.push(barra)
-        // console.log(i)
+        barra.setAttribute('class', `progresso-${nomeLinguagem}`)
+        setWidth(porcentagens[i], barra)
+        setBackgroundColor(nomeCor, barra)
+        tempBarras.push(barra)
 
         let li = document.createElement('li')
-        li.classList.add(`l-${e}`)
-        li.innerText = e
+        li.classList.add(`l-${nomeLinguagem}`)
+        li.innerText = nomeLinguagem
 
-        let porcen = document.createElement('span')
-        porcen.className += e
-        porcen.innerText += ' '  + porcentagens[i] + '%'
-        li.style.color = cores[e]
-        console.log
-        li.appendChild(porcen)
+        let numPorcentagem = document.createElement('span')
+        numPorcentagem.classList.add(nomeLinguagem)
+        numPorcentagem.innerText += ' '  + porcentagens[i] + '%'
+
+        setColor(nomeCor, li)
+        li.appendChild(numPorcentagem)
         ul.appendChild(li)
     });
-    cti.push(cnt)
-    cti.push(ul)
 
-    return cti
+    containerTempBarras.push(tempBarras)
+    containerTempBarras.push(ul)
+
+    return containerTempBarras
 };
 
-
-function preenchendoBarras() {
-    var projetos = document.querySelectorAll('.projeto')
-    // Pegando todos os projetos
-
-    projetos.forEach((e) => {
-        var listaProgressos = e.querySelectorAll('.list-langue li span')
-        // Pegando as listas de numeros de progresso
-
-        var barProgresso = e.querySelectorAll('.bar-langue span')
-        // Pegando barra de progresso
-
-        adicionarProgresso(listaProgressos, barProgresso)
-    });
-
-
-    function adicionarProgresso(progressos, barras) {
-        progressos.forEach((e, i) => {
-            var cor = e.className
-
-            barras[i].style.width = e.innerText
-            barras[i].style.backgroundColor = cores[cor]
-        });
-    };
-};
-
+setWidth = (width, barra) => barra.style.width = width + '%'
+setBackgroundColor = (cor, item) => item.style.backgroundColor = cores[cor]
+setColor = (cor, item) =>  item.style.color = cores[cor]
 
 criarCards()
 
-preenchendoBarras()
+

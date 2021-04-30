@@ -92,63 +92,53 @@ function criarCards() {
 };
 
 function criarBarras(listaBarras, porcentagens) {
-    let cti = []
-    let cnt = []
+    let containerTempBarras = []
+    let tempBarras = []
     let ul = document.createElement('ul')
 
-    // console.log(listaBarras, porcentagens)
     listaBarras.forEach((e, i) => {
+        let nomeCor = e
+        let nomeLinguagem = e
+
         let barra = document.createElement('span')
-        barra.setAttribute('class', `progresso-${e}`)
-        cnt.push(barra)
-        // console.log(i)
+        barra.setAttribute('class', `progresso-${nomeLinguagem}`)
+        setWidth(porcentagens[i], barra)
+        setBackgroundColor(nomeCor, barra)
+        tempBarras.push(barra)
 
         let li = document.createElement('li')
-        li.classList.add(`l-${e}`)
-        li.innerText = e
+        li.classList.add(`l-${nomeLinguagem}`)
+        li.innerText = nomeLinguagem
 
-        let porcen = document.createElement('span')
-        porcen.className += e
-        porcen.innerText += ' '  + porcentagens[i] + '%'
-        li.style.color = cores[e]
-        console.log
-        li.appendChild(porcen)
+        let numPorcentagem = document.createElement('span')
+        numPorcentagem.classList.add(nomeLinguagem)
+        numPorcentagem.innerText += ' '  + porcentagens[i] + '%'
+
+        setColor(nomeCor, li)
+        li.appendChild(numPorcentagem)
         ul.appendChild(li)
     });
-    cti.push(cnt)
-    cti.push(ul)
 
-    return cti
+    containerTempBarras.push(tempBarras)
+    containerTempBarras.push(ul)
+
+    return containerTempBarras
 };
 
+setWidth = (width, barra) => barra.style.width = width + '%'
+setBackgroundColor = (cor, item) => item.style.backgroundColor = cores[cor]
+setColor = (cor, item) =>  item.style.color = cores[cor]
 
-function preenchendoBarras() {
-    var projetos = document.querySelectorAll('.projeto')
-    // Pegando todos os projetos
+const btnVerMais = document.querySelector('#ver-mais');
 
-    projetos.forEach((e) => {
-        var listaProgressos = e.querySelectorAll('.list-langue li span')
-        // Pegando as listas de numeros de progresso
+btnVerMais.addEventListener('click', () => {
+    redirecionarPage()
+});
 
-        var barProgresso = e.querySelectorAll('.bar-langue span')
-        // Pegando barra de progresso
-
-        adicionarProgresso(listaProgressos, barProgresso)
-    });
-
-
-    function adicionarProgresso(progressos, barras) {
-        progressos.forEach((e, i) => {
-            var cor = e.className
-
-            barras[i].style.width = e.innerText
-            barras[i].style.backgroundColor = cores[cor]
-        });
-    };
-};
-
+function redirecionarPage() {
+    window.location.href = 'projetos.html'
+}
 
 criarCards()
 
 
-preenchendoBarras()
