@@ -75,7 +75,6 @@
 }
 
 .aberto .menu-hamburg::after, .aberto .menu-hamburg::before {
-    background-color: var(--black);
     content: '';
     width: 100%;
     height: 2px;
