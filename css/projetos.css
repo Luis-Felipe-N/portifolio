@@ -15,17 +15,21 @@
 .projeto {
     border: 1px solid rgba(255, 255, 255, 0.07);
     color: var(--text-color);
-    width: 16rem;
+    max-width: 16rem;
+    width: 100%;
+    overflow: hidden;
 }
 
 .projeto__img {
     height: 10rem;
     background-size: cover;
     background-position: center;
+    transition: all .2s;
 }
 
 .projeto__descricao {
-    height: 9rem;
+    height: 10rem;
+    /* height: 100%; */
     gap: .5rem;
     border-top: 1px solid rgba(255, 255, 255, 0.07);
     padding: 1rem;
@@ -37,13 +41,12 @@
 .projeto__descricao a {
     color: var(--white);
     text-decoration: none;
-    display: flex;
+    display: inline;
     align-items: center;
 }
 
 .projeto__descricao a:hover {
     text-decoration: underline;
-    display: inline;
 }
 
 .projeto__descricao h3 {
@@ -89,7 +92,9 @@
     cursor: pointer;
     font-weight: 700;
     border-radius: .2rem;
-    margin: 1rem auto;
+    margin: 2rem auto;
+    color: var(--white);
+    background: var(--color-gradient);
 }
 
 .btn-ver-mais i {
@@ -98,6 +103,6 @@
 }
 
 .btn-ver-mais:hover i {
-    color: rgb(0, 0, 0);
+    /* color: ; */
     transform: translateX(.8rem);
 }

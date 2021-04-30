@@ -23,55 +23,8 @@ const tdProjetos = [
         image: '/assets/ft-border-radius-generador.png',
         tecnologias: ['css', 'html', 'js'],
         porcentagem: [49.3, 32.5, 18.2]
-    },
-    {   
-        title: 'Gerador de Text shadow',
-        link: 'https://text-shadow-generator-luis.netlify.app',
-        text: 'No Gerador de Text-shadow você vê em tempo real sua criação e pega o código pronto.',
-        image: 'https://d33wubrfki0l68.cloudfront.net/60838f093f1fce0008d26705/screenshot_2021-04-24-03-22-55-0000.png',
-        tecnologias: ['css', 'html', 'js'],
-        porcentagem: [44.2, 39.1, 16.7]
-    },
-    {   
-        title: 'Blogr landing page',
-        link: 'https://blogr-luis.netlify.app',
-        text: 'Desafio Front-end concluído do <a href="https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP">DevMentor Front-end</a>.',
-        image: 'https://res.cloudinary.com/dz209s6jk/image/upload/v1615479875/Challenges/awqnouxukwefdkaqt5iq.jpg',
-        tecnologias: ['html', 'css', 'js'],
-        porcentagem: [50.0, 46.7, 3.3]
-    },
-    {   
-        title: 'Fylo dark theme landing page',
-        link: 'https://fylo-dark-luis.netlify.app',
-        text: 'Desafio Front-end concluído do <a href="https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd">DevMentor Front-end</a>.',
-        image: 'https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/mhwyzwfgaii3cw5s6jco.jpg',
-        tecnologias: ['html', 'css'],
-        porcentagem: [59.7, 40.3]
-    },
-    {   
-        title: 'codar',
-        link: 'https://codar-luis.netlify.app',
-        text: 'Desafio Front-end concluído do <a href="https://devchallenge.com.br/challenges/5ed47992adee277fae224a0b/details">DevChallenge</a>.',
-        image: 'https://d33wubrfki0l68.cloudfront.net/608398c9a73863752d341aba/screenshot_2021-04-24-04-04-32-0000.png',
-        tecnologias: ['css', 'html'],
-        porcentagem: [54.0, 46.0]
-    },
-    {   
-        title: 'Conselhos do Sabio Bode',
-        link: 'https://conselho-bode.netlify.app',
-        text: 'Desafio Front-end consumindo API concluído do <a href="https://devchallenge.com.br/challenges/5ed47992adee277fae224a0b/details">DevChallenge</a>.',
-        image: 'https://d33wubrfki0l68.cloudfront.net/608a19f8687f410007741c20/screenshot_2021-04-29-02-29-18-0000.png',
-        tecnologias: ['css', 'html', 'js'],
-        porcentagem: [46.7, 43.2, 10.1]
-    },
-    {   
-        title: 'Streaming vendas',
-        link: 'https://streaming-vendas.netlify.app',
-        text: 'Um modelo de site simples para que direciona para alguma rede social.',
-        image: 'https://d33wubrfki0l68.cloudfront.net/60802228754c84151e98b203/screenshot_2021-04-21-13-01-36-0000.png',
-        tecnologias: ['css', 'html', 'js'],
-        porcentagem: [46.7, 43.2, 10.1]
     }
+
 ]
 
 const cores = {
@@ -196,5 +149,6 @@ function preenchendoBarras() {
 
 
 criarCards()
+
 
 preenchendoBarras()

@@ -31,12 +31,14 @@
 
 .container-text h1 {
     font-size: max(55px, 6vw);
-    font-weight: 600;
+    font-weight: 900;
 }
 
 .container-text .btn-cv {
-    background-color: var(--white);
-    color: var(--black);
+    background: var(--color-gradient);
+    text-decoration: none;
+
+    color: var(--white);
     padding: .7rem 1rem;
     margin-top: 1rem;
     display: inline-block;

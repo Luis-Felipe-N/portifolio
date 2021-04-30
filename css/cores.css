@@ -6,6 +6,8 @@
     --color-html: #E44B27;
     --color-css: #254cde;
     --color-python: #366f9e;
+
+    --color-gradient: linear-gradient(to right, #f12711, #ff8800);
 }
 
 

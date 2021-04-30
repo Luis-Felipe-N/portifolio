@@ -4,9 +4,30 @@
     align-items: center;
     justify-content: center;
 }
-
-.center h1 {
+#cabecalho-projetos {
+    text-align: center;
+    padding: 0 5%;
+    padding-bottom: 10%;
+}
+#cabecalho-projetos h1 {
+    font-size: 2rem;
     color: var(--white);
+    position: relative;
+    display: inline;
+    z-index: 2;
+}
+
+
+#cabecalho-projetos h1::before {
+    content: '';
+    width: 90%;
+    right: 0;
+    bottom: 5px;
+    z-index: -1;
+    /* transform: translate(-50%); */
+    height: 7px;
+    background: var(--color-gradient);
+    position: absolute;
 }
 
 body {
