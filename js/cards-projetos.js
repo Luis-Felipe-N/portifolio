@@ -71,6 +71,14 @@ const tdProjetos = [
         image: 'https://d33wubrfki0l68.cloudfront.net/60802228754c84151e98b203/screenshot_2021-04-21-13-01-36-0000.png',
         tecnologias: ['css', 'html', 'js'],
         porcentagem: [60.9, 36.2, 2.9]
+    },
+    {   
+        title: 'REST Countries',
+        link: 'https://rest-countries-luis.netlify.app/',
+        text: 'Site que mostra mais de 200 países, com opções de fitragem e pesquisa.',
+        image: 'https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/yhq5ihanseyinzwblaw1.jpg',
+        tecnologias: ['js', 'css', 'html'],
+        porcentagem: [46.5, 34.1, 19.4]
     }
 ]
 

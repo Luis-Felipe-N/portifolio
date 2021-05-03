@@ -9,12 +9,12 @@ const tdProjetos = [
         porcentagem: [100]
     },
     {   
-        title: 'Bookorama',
-        link: 'https://bookorama-luis-felipe.netlify.app/',
-        text: 'No Bookorama você pode listar uma série de livros para ler depois.',
-        image: '/assets/ft-bookorama.png',
-        tecnologias: ['js', 'html', 'css'],
-        porcentagem: [43.4, 31.1, 25.5]
+        title: 'REST Countries',
+        link: 'https://rest-countries-luis.netlify.app/',
+        text: 'Site que mostra mais de 200 países, com opções de fitragem e pesquisa.',
+        image: 'https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/yhq5ihanseyinzwblaw1.jpg',
+        tecnologias: ['js', 'css', 'html'],
+        porcentagem: [46.5, 34.1, 19.4]
     },
     {   
         title: 'Gerador de Bordas',
