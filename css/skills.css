@@ -1,6 +1,6 @@
 .skills {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
 }
 
@@ -10,6 +10,8 @@
     padding: 2rem;
     border-radius: .15rem;
     transition: .2s, border .1s ;
+    display: grid;
+    place-items: center;
 }
 
 .card:hover {
@@ -17,21 +19,24 @@
     border: 2px solid var(--color-linguagem);
 }
 
-.card i {
-    font-size: 3rem;
+.content-card {
+    color: var(--color-linguagem);
+    text-align: center;
+}
+
+.content-card i {
+    font-size: 5rem;
     transition: .2s;
 }
 
-.card .title-card h3 {
-    color: var(--text-color);
+.content-card h3 {
+    margin: .5rem 0;
 }
-
+/* 
 .text-content h3, .title-card i {
-   color: var(--color-linguagem);
 }
 
 .title-card  h3 {
-    margin: 1rem 0;
     font-size: 1rem;
 }
 .text-content {
@@ -58,4 +63,4 @@
         grid-template-columns: repeat(1, 1fr);
      }
      
-}
+} */
