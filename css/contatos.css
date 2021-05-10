@@ -35,11 +35,7 @@
 }
 .contato__sociais a:hover {
     color: var(--white);
-
- 
-    background: #ff0000; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ff0000, #ff8800); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ff0000, #ff8800); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: var(--color-gradient);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;  
@@ -56,9 +52,7 @@
     padding: .2rem;
 }
 .contato__contatos ul li:hover{
-    background: #ff0000; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ff0000, #ff8800); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ff0000, #ff8800); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: var(--color-gradient);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;  
