@@ -82,7 +82,7 @@ const tdProjetos = [
     },
     {
         title: 'Calculara APP',
-        link: 'https://github.com/Luis-Felipe-N/calculadora',
+        link: 'https://calculadora-luis.netlify.app/',
         text: 'Calculadora APP é um desafio proposto pelo <a href="https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29">Front-end Mentor</a>.',
         image: 'https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/bz3taijsat3rhsocodym.jpg',
         tecnologias: ['sass', 'html', 'js'], 
@@ -90,7 +90,7 @@ const tdProjetos = [
     },
     {
         title: 'Self Care',
-        link: 'https://github.com/Luis-Felipe-N/selfcare',
+        link: 'https://self-care-scss.netlify.app/',
         text: 'Self Care é um desafio proposto pelo <a href="https://devchallenge.com.br/challenges/5f14fad2130a5d78f89d9642/details">DevChallenge</a> para treino do sass.',
         image: 'https://d33wubrfki0l68.cloudfront.net/609aad205136db34b780ddd8/screenshot_2021-05-11-16-13-27-0000.png',
         tecnologias: ['sass', 'html', 'js'], 
