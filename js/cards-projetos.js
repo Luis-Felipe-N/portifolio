@@ -79,6 +79,22 @@ const tdProjetos = [
         image: 'https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/yhq5ihanseyinzwblaw1.jpg',
         tecnologias: ['js', 'css', 'html'],
         porcentagem: [46.5, 34.1, 19.4]
+    },
+    {
+        title: 'Calculara APP',
+        link: 'https://github.com/Luis-Felipe-N/calculadora',
+        text: 'Calculadora APP é um desafio proposto pelo <a href="https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29">Front-end Mentor</a>.',
+        image: 'https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/bz3taijsat3rhsocodym.jpg',
+        tecnologias: ['sass', 'html', 'js'], 
+        porcentagem: [58.1, 26.9, 15]
+    },
+    {
+        title: 'Self Care',
+        link: 'https://github.com/Luis-Felipe-N/selfcare',
+        text: 'Self Care é um desafio proposto pelo <a href="https://devchallenge.com.br/challenges/5f14fad2130a5d78f89d9642/details">DevChallenge</a> para treino do sass.',
+        image: 'https://d33wubrfki0l68.cloudfront.net/609aad205136db34b780ddd8/screenshot_2021-05-11-16-13-27-0000.png',
+        tecnologias: ['sass', 'html', 'js'], 
+        porcentagem: [44.8, 34.5, 20.7]
     }
 ]
 
@@ -86,7 +102,8 @@ const cores = {
     js: '#f1da1d',
     html: '#E44B27',
     css: '#254CDE',
-    python: '#366F9E'
+    python: '#366F9E',
+    sass:'#cf649a'
 };
 
 function criarCards() {

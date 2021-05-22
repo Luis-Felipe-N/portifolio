@@ -1,12 +1,12 @@
 // Criar card projetos
 const tdProjetos = [
     {   
-        title: 'Bot sorteio',
-        link: 'https://github.com/Luis-Felipe-N/Bot-sorteio',
-        text: 'O Bot Sorteio é um programa que te permite comentar em sorteios do Instagram sem muito esforço.',
-        image: '/assets/ft-botsorteio.png',
-        tecnologias: ['python'], 
-        porcentagem: [100]
+        title: 'Calculara APP',
+        link: 'https://github.com/Luis-Felipe-N/calculadora',
+        text: 'Calculadora APP é um desafio proposto pelo <a href="https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29">Front-end Mentor</a>.',
+        image: 'https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/bz3taijsat3rhsocodym.jpg',
+        tecnologias: ['sass', 'html', 'js'], 
+        porcentagem: [58.1, 26.9, 15]
     },
     {   
         title: 'REST Countries',
@@ -19,7 +19,7 @@ const tdProjetos = [
     {   
         title: 'Gerador de Bordas',
         link: 'https://border-radius-generator-luis.netlify.app/',
-        text: 'No Gerador de bordas você vê em tempo real sua criação e pega o código pronto.',
+        text: 'No Gerador de bordas você vê em tempo real O formato em radius e pega o código pronto.',
         image: '/assets/ft-border-radius-generador.png',
         tecnologias: ['css', 'html', 'js'],
         porcentagem: [49.3, 32.5, 18.2]
@@ -31,7 +31,8 @@ const cores = {
     js: '#f1da1d',
     html: '#E44B27',
     css: '#254CDE',
-    python: '#366F9E'
+    python: '#366F9E',
+    sass:'#cf649a'
 };
 
 function criarCards() {
@@ -140,5 +141,3 @@ function redirecionarPage() {
 }
 
 criarCards()
-
-
