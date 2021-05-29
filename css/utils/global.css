@@ -1,10 +1,4 @@
-@import 'variaveis.css';
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-}
+/* @import 'variaveis.css'; */
 
 #home, #skills, #projetos{
     background-color: var(--black);

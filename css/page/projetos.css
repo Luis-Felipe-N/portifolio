@@ -1,0 +1,25 @@
+
+
+.btn-ver-mais {
+    padding: .7rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: .2rem;
+    margin: 2rem auto;
+    color: var(--white);
+    background: var(--color-gradient);
+}
+
+.btn-ver-mais i {
+    transition: .2s;
+
+}
+
+.btn-ver-mais:hover i {
+    /* color: ; */
+    transform: translateX(.4rem);
+}

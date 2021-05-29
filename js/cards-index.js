@@ -5,8 +5,7 @@ const tdProjetos = [
         link: 'https://github.com/Luis-Felipe-N/calculadora',
         text: 'Calculadora APP é um desafio proposto pelo <a href="https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29">Front-end Mentor</a>.',
         image: 'https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/bz3taijsat3rhsocodym.jpg',
-        tecnologias: ['sass', 'html', 'js'], 
-        porcentagem: [58.1, 26.9, 15]
+        tecnologias: ['sass', 'html', 'js']
     },
     {   
         title: 'REST Countries',
@@ -21,8 +20,7 @@ const tdProjetos = [
         link: 'https://border-radius-generator-luis.netlify.app/',
         text: 'No Gerador de bordas você vê em tempo real O formato em radius e pega o código pronto.',
         image: '/assets/ft-border-radius-generador.png',
-        tecnologias: ['css', 'html', 'js'],
-        porcentagem: [49.3, 32.5, 18.2]
+        tecnologias: ['css', 'html', 'js']
     }
 
 ]
@@ -35,55 +33,58 @@ const cores = {
     sass:'#cf649a'
 };
 
+const newElement = ( TagName, className = false ) => {
+    const elem = document.createElement( TagName )
+    className ? elem.classList.add( className ) : elem
+    return elem
+}
+
 function criarCards() {
 
     let containerProjetos = document.querySelector('.container-projetos')
     
     for (let i = 0; i < tdProjetos.length; i++) {
         // Card Projeto
-        let cardProjeto = document.createElement('div');
-        cardProjeto.classList.add('projeto')
+        let cardProjeto = newElement('div', 'projeto');
 
         // Parte da imagem
-        let projetoImg = document.createElement('div');
-        projetoImg.classList.add('projeto__img')
+        let projetoImg = newElement('div', 'projeto__img');
         projetoImg.style.backgroundImage = `url(${tdProjetos[i].image})`
 
         // Parte da descrição
-        let projetoDescri = document.createElement('div')
-        projetoDescri.classList.add('projeto__descricao')
+        let projetoDescri = newElement('div','projeto__descricao')
 
-        let containerTitle = document.createElement('h3')
+        let containerTitle = newElement('h3', 'projeto__descricao-title')
         
         
-        let title = document.createElement('a')
+        let title = newElement('a', 'projeto__descricao-link')
         title.innerText = tdProjetos[i].title
         title.setAttribute('href', tdProjetos[i].link)
         title.setAttribute('target', '_blank')
-
-        let descri = document.createElement('p')
-        descri.innerHTML = tdProjetos[i].text
-
         containerTitle.appendChild(title)
         projetoDescri.appendChild(containerTitle)
+
+        let containerLinguagens = newElement('div', 'projeto__descricao-linguagens')
+        let spansLinguagens = criarNomeLinguagens(tdProjetos[i].tecnologias)
+        spansLinguagens.forEach(span => {
+            containerLinguagens.appendChild( span )
+        });
+        projetoDescri.appendChild( containerLinguagens )
+
+        let descri = newElement('p','projeto__descricao-text')
+        descri.innerHTML = tdProjetos[i].text
         projetoDescri.appendChild(descri)
 
-        // barra das tecnologias
-        let containerTecs = document.createElement('div')
-        containerTecs.classList.add('tec-ulti')
 
-        let containerBarras = document.createElement('div')
-        containerBarras.classList.add('bar-langue')
-
-        let barras = criarBarras(tdProjetos[i].tecnologias, tdProjetos[i].porcentagem)
-        barras[1].classList.add('list-langue')        
-        barras[0].forEach((e) => {
-            containerBarras.appendChild(e)
-        });
-
-        containerTecs.appendChild(containerBarras)
-        containerTecs.appendChild(barras[1])
-        projetoDescri.appendChild(containerTecs)
+        // Btns
+        let containerBtns = newElement('div', 'projeto__descricao-btns')
+        let btnViewDemo = newElement('a', 'projeto__descricao-btns-view-demo')
+        btnViewDemo.textContent = 'View Demo'
+        let btnViewCode = newElement('a', 'projeto__descricao-btns-view-code')
+        btnViewCode.textContent = 'View Code'
+        containerBtns.appendChild(btnViewDemo)
+        containerBtns.appendChild(btnViewCode)
+        projetoDescri.appendChild(containerBtns)
 
         cardProjeto.appendChild(projetoImg)
         cardProjeto.appendChild(projetoDescri)
@@ -92,52 +93,13 @@ function criarCards() {
     };
 };
 
-function criarBarras(listaBarras, porcentagens) {
-    let containerTempBarras = []
-    let tempBarras = []
-    let ul = document.createElement('ul')
-
-    listaBarras.forEach((e, i) => {
-        let nomeCor = e
-        let nomeLinguagem = e
-
-        let barra = document.createElement('span')
-        barra.setAttribute('class', `progresso-${nomeLinguagem}`)
-        setWidth(porcentagens[i], barra)
-        setBackgroundColor(nomeCor, barra)
-        tempBarras.push(barra)
-
-        let li = document.createElement('li')
-        li.classList.add(`l-${nomeLinguagem}`)
-        li.innerText = nomeLinguagem
-
-        let numPorcentagem = document.createElement('span')
-        numPorcentagem.classList.add(nomeLinguagem)
-        numPorcentagem.innerText += ' '  + porcentagens[i] + '%'
-
-        setColor(nomeCor, li)
-        li.appendChild(numPorcentagem)
-        ul.appendChild(li)
-    });
-
-    containerTempBarras.push(tempBarras)
-    containerTempBarras.push(ul)
-
-    return containerTempBarras
+function criarNomeLinguagens( linguagens ) {
+    const spanLinguagens = linguagens.map( linguagem => {
+        const span = newElement('span', `c-${linguagem}`)
+        span.textContent = '#' + linguagem
+        return span
+    })
+    return spanLinguagens
 };
-
-setWidth = (width, barra) => barra.style.width = width + '%'
-setBackgroundColor = (cor, item) => item.style.backgroundColor = cores[cor]
-setColor = (cor, item) =>  item.style.color = cores[cor]
-
-const btnVerMais = document.querySelector('#ver-mais');
-
-btnVerMais.addEventListener('click', () => {
-    redirecionarPage()
-});
-
-function redirecionarPage() {
-    window.location.href = 'projetos.html'
-}
 
 criarCards()
