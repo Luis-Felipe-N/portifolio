@@ -124,6 +124,10 @@ function criarCards() {
         title.setAttribute('target', '_blank')
         containerTitle.appendChild(title)
         projetoDescri.appendChild(containerTitle)
+        
+                let descri = newElement('p','projeto__descricao-text')
+                descri.innerHTML = tdProjetos[i].text
+                projetoDescri.appendChild(descri)
 
         let containerLinguagens = newElement('div', 'projeto__descricao-linguagens')
         let spansLinguagens = criarNomeLinguagens(tdProjetos[i].tecnologias)
@@ -132,20 +136,16 @@ function criarCards() {
         });
         projetoDescri.appendChild( containerLinguagens )
 
-        let descri = newElement('p','projeto__descricao-text')
-        descri.innerHTML = tdProjetos[i].text
-        projetoDescri.appendChild(descri)
 
-
-        // Btns
-        let containerBtns = newElement('div', 'projeto__descricao-btns')
-        let btnViewDemo = newElement('a', 'projeto__descricao-btns-view-demo')
-        btnViewDemo.textContent = 'View Demo'
-        let btnViewCode = newElement('a', 'projeto__descricao-btns-view-code')
-        btnViewCode.textContent = 'View Code'
-        containerBtns.appendChild(btnViewDemo)
-        containerBtns.appendChild(btnViewCode)
-        projetoDescri.appendChild(containerBtns)
+        // // Btns
+        // let containerBtns = newElement('div', 'projeto__descricao-btns')
+        // let btnViewDemo = newElement('a', 'projeto__descricao-btns-view-demo')
+        // btnViewDemo.textContent = 'View Demo'
+        // let btnViewCode = newElement('a', 'projeto__descricao-btns-view-code')
+        // btnViewCode.textContent = 'View Code'
+        // containerBtns.appendChild(btnViewDemo)
+        // containerBtns.appendChild(btnViewCode)
+        // projetoDescri.appendChild(containerBtns)
 
         cardProjeto.appendChild(projetoImg)
         cardProjeto.appendChild(projetoDescri)
@@ -162,3 +162,5 @@ function criarNomeLinguagens( linguagens ) {
     })
     return spanLinguagens
 };
+
+criarCards()
