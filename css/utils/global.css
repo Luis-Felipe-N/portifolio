@@ -36,3 +36,8 @@ html {
     background: var(--color-gradient);
     position: absolute;
 }
+
+.color-sass {
+    color: var(--color-linguagem);
+    font-weight: 700;
+}

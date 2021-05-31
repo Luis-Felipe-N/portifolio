@@ -31,28 +31,28 @@ const tdProjetos = [
     {   
         title: 'Blogr',
         link: 'https://blogr-luis.netlify.app',
-        text: 'Desafio Front-end concluído do <a href="https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP">DevMentor Front-end</a>.',
+        text: 'Desafio Front-end concluído do <a target="_blank" rel="noopener noreferrer" href="https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP">DevMentor Front-end</a>.',
         image: 'https://res.cloudinary.com/dz209s6jk/image/upload/v1615479875/Challenges/awqnouxukwefdkaqt5iq.jpg',
         tecnologias: ['html', 'css', 'js']
     },
     {   
         title: 'Fylo dark',
         link: 'https://fylo-dark-luis.netlify.app',
-        text: 'Desafio Front-end concluído do <a href="https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd">DevMentor Front-end</a>.',
+        text: 'Desafio Front-end concluído do <a target="_blank" rel="noopener noreferrer" href="https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd">DevMentor Front-end</a>.',
         image: 'https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/mhwyzwfgaii3cw5s6jco.jpg',
         tecnologias: ['html', 'css']
     },
     {   
         title: 'Codar',
         link: 'https://codar-luis.netlify.app',
-        text: 'Desafio Front-end concluído do <a href="https://devchallenge.com.br/challenges/5ed47992adee277fae224a0b/details">DevChallenge</a>.',
+        text: 'Desafio Front-end concluído do <a target="_blank" rel="noopener noreferrer" href="https://devchallenge.com.br/challenges/5ed47992adee277fae224a0b/details">DevChallenge</a>.',
         image: 'https://d33wubrfki0l68.cloudfront.net/608398c9a73863752d341aba/screenshot_2021-04-24-04-04-32-0000.png',
         tecnologias: ['css', 'html']
     },
     {   
         title: 'Conselhos do Bode',
         link: 'https://conselho-bode.netlify.app',
-        text: 'Desafio Front-end consumindo API concluído do <a href="https://devchallenge.com.br/challenges/5ed47992adee277fae224a0b/details">DevChallenge</a>.',
+        text: 'Desafio Front-end consumindo API concluído do <a target="_blank" rel="noopener noreferrer" href="https://devchallenge.com.br/challenges/5ed47992adee277fae224a0b/details">DevChallenge</a>.',
         image: 'https://d33wubrfki0l68.cloudfront.net/608a19f8687f410007741c20/screenshot_2021-04-29-02-29-18-0000.png',
         tecnologias: ['css', 'html', 'js']
     },
@@ -73,16 +73,23 @@ const tdProjetos = [
     {
         title: 'Calculara APP',
         link: 'https://calculadora-luis.netlify.app/',
-        text: 'Calculadora APP é um desafio proposto pelo <a href="https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29">Front-end Mentor</a>.',
+        text: 'Calculadora APP é um desafio proposto pelo <a target="_blank" rel="noopener noreferrer" href="https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29">Front-end Mentor</a>.',
         image: 'https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/bz3taijsat3rhsocodym.jpg',
-        tecnologias: ['sass', 'html', 'js']
+        tecnologias: ['scss', 'html', 'js']
     },
     {
         title: 'Self Care',
         link: 'https://self-care-scss.netlify.app/',
-        text: 'Self Care é um desafio proposto pelo <a href="https://devchallenge.com.br/challenges/5f14fad2130a5d78f89d9642/details">DevChallenge</a> para treino do sass.',
+        text: 'Self Care é um desafio proposto pelo <a target="_blank" rel="noopener noreferrer" href="https://devchallenge.com.br/challenges/5f14fad2130a5d78f89d9642/details">DevChallenge</a> para treino do sass.',
         image: 'https://d33wubrfki0l68.cloudfront.net/609aad205136db34b780ddd8/screenshot_2021-05-11-16-13-27-0000.png',
-        tecnologias: ['sass', 'html', 'js']
+        tecnologias: ['scss', 'html', 'js']
+    },
+    {
+        title: 'Time Now',
+        link: 'https://time-now-luis.netlify.app/',
+        text: 'Time Now é uma landing page simples construido com <span class="color-sass c-sass">scss</span>. Desafio proposto por <a target="_blank" rel="noopener noreferrer" href="https://www.codewell.cc/challenges/608d9a7d747bad001532bd70">Codewell.cc</a>.',
+        image: 'https://codewell-storage-bucket.s3.us-east-2.amazonaws.com/Time_Now_Slider_Thumbnail_min_713c17672e.jpg',
+        tecnologias: ['scss', 'html', 'js']
     }
 ]
 
@@ -136,16 +143,6 @@ function criarCards() {
         });
         projetoDescri.appendChild( containerLinguagens )
 
-
-        // // Btns
-        // let containerBtns = newElement('div', 'projeto__descricao-btns')
-        // let btnViewDemo = newElement('a', 'projeto__descricao-btns-view-demo')
-        // btnViewDemo.textContent = 'View Demo'
-        // let btnViewCode = newElement('a', 'projeto__descricao-btns-view-code')
-        // btnViewCode.textContent = 'View Code'
-        // containerBtns.appendChild(btnViewDemo)
-        // containerBtns.appendChild(btnViewCode)
-        // projetoDescri.appendChild(containerBtns)
 
         cardProjeto.appendChild(projetoImg)
         cardProjeto.appendChild(projetoDescri)

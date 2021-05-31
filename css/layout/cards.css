@@ -78,37 +78,6 @@
     font-size: .9rem;
 }
 
-
-/* .projeto__descricao-tecnoligias-barras{
-    display: flex;
-    height: 4px;
-    border-radius: 6px;
-    overflow: hidden;
-    margin-bottom: 6px;
-    box-shadow:  3px 3px 7px rgba(255, 255, 255, 0.1);
-}
-
-.projeto__descricao-tecnoligias-linguagens {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    font-size: .7rem;
-    gap: .7rem;
-}
-
-.projeto__descricao-tecnoligias-linguagens li {
-    text-transform: uppercase;
-    margin: 0 .2rem;
-    list-style: none;
-    font-weight: 700;
-} */
-
-.projeto__descricao-btns {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
 .projeto__descricao-btns-view-demo, .projeto__descricao-btns-view-code {
     padding: .8rem 1rem;
     color: #fff;
