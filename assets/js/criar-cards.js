@@ -4,7 +4,7 @@ const newElement = ( TagName, className = false ) => {
     return elem
 }
  
-export default function criarCards( projetos, quantCards ) {
+export default function criarCards( projetos ) {
 
     let containerProjetos = document.querySelector('.container-projetos')
     
@@ -13,6 +13,8 @@ export default function criarCards( projetos, quantCards ) {
 
         // Card Projeto
         let cardProjeto = newElement('div', 'projeto');
+        cardProjeto.classList.add('anima-left')
+        cardProjeto.setAttribute( 'data-js', 'anima-left')
 
         // Parte da imagem
         let projetoImg = newElement('div', 'projeto__img');
@@ -46,8 +48,6 @@ export default function criarCards( projetos, quantCards ) {
         cardProjeto.appendChild(projetoDescri)
         
         containerProjetos.appendChild(cardProjeto)
-
-
     });
     
     function criarNomeLinguagens( linguagens ) {

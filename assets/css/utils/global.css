@@ -41,3 +41,16 @@ html {
     color: var(--color-linguagem);
     font-weight: 700;
 }
+
+/* Animações */
+
+.js .anima-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: .2s;
+}
+
+.anima-left.active {
+    opacity: 1;
+    transform: translateX(0);
+}

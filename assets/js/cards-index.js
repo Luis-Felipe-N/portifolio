@@ -7,7 +7,7 @@ const tdProjetos = [
         link: 'https://github.com/Luis-Felipe-N/calculadora',
         text: 'Calculadora APP é um desafio proposto pelo <a target="_blank" rel="noopener noreferrer" href="https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29">Front-end Mentor</a>.',
         image: 'https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/bz3taijsat3rhsocodym.jpg',
-        technologies: ['sass', 'html', 'js']
+        technologies: ['scss', 'html', 'js']
     },
     {   
         title: 'REST Countries',
