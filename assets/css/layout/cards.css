@@ -1,0 +1,116 @@
+.wrapper-projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-projetos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.projeto {
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: .3rem;
+    color: var(--text-color);
+    max-width: 17rem;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Inter' !important;
+}
+
+.projeto:hover {
+    box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.07);
+}
+
+.projeto__img { 
+    height: 10rem;
+    background-size: cover;
+    background-position: center;
+    transition: all .2s;
+}
+
+.projeto__descricao {
+    height: 9rem;
+    gap: .5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+    background-color: rgba(19, 19, 19, 0.507);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projeto__descricao-link,.projeto__descricao-text a {
+    color: var(--white);
+    text-decoration: none;
+    display: inline;
+    font-weight: 700;
+    margin: .3rem 0;
+}
+
+.projeto__descricao-link:hover, .projeto__descricao-text a:hover  {
+    text-decoration: underline;
+}
+
+.projeto__descricao-title {
+    font-size: 1.4rem;
+    text-decoration: underline;
+}
+
+.projeto__descricao-text {
+    font-size: .9rem;
+    margin-bottom: .7rem;
+}
+
+.projeto__descricao-linguagens {
+    display: flex;
+    gap: 2rem;
+}
+
+.projeto__descricao-linguagens span {
+    color: var( --color-linguagem );
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+
+.projeto__descricao-btns-view-demo, .projeto__descricao-btns-view-code {
+    padding: .8rem 1rem;
+    color: #fff;
+    border-radius: .2rem;
+    font-weight: 700;
+    font-size: .8rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.projeto__descricao-btns-view-demo {
+    background: var(--color-gradient);
+}
+
+.projeto__descricao-btns-view-code {
+    background-color: var(--black);
+    color: var(--white);
+    background: var(--color-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+}
+
+.projeto__descricao-btns-view-code::before {
+    content: '';
+    width: calc( 100% - 4px );
+    height: calc( 100% - 4px );
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* display: block; */
+    border: 2px solid transparent ;
+    border-image: var(--color-gradient);
+    border-image-slice: 1;
+}

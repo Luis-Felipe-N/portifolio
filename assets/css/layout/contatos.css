@@ -1,0 +1,68 @@
+#contatos {
+    background-color: rgba(0, 0, 0, 0.96);
+    padding:1rem 5%;
+    box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.04);
+}
+
+.wrapper-contatos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.wrapper-contatos > .logo > a {
+    color: var(--text-color);
+}
+
+.wrapper-contatos > .logo > a:hover {
+    color: var(--white);
+}
+
+.contato__contatos ul li {
+    list-style: none;
+}
+
+.contato__sociais {
+    display: flex;
+    
+}
+
+.contato__sociais a {
+    padding: 1rem;
+    color: var(--text-color);
+    transition: .2s;
+}
+.contato__sociais a:hover {
+    color: var(--white);
+    background: var(--color-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;  
+}
+
+.contato__sociais i {
+    font-size: 2rem;
+    cursor: pointer;
+}
+.contato__contatos ul li{
+    transition: .2s;
+    display: flex;
+    gap: 1rem;
+    padding: .2rem;
+}
+.contato__contatos ul li:hover{
+    background: var(--color-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;  
+}
+
+@media (max-width: 750px) {
+    .wrapper-contatos {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
