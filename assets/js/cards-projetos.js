@@ -109,15 +109,6 @@ const tdProjetos = [
     }
 ]
 
-const cores = {
-    js: '#f1da1d',
-    html: '#E44B27',
-    css: '#254CDE',
-    python: '#366F9E',
-    sass:'#cf649a',
-    React: "#61DAFB"
-};
-
 const quantCards = tdProjetos.length
 
 criarCards( tdProjetos, quantCards )
