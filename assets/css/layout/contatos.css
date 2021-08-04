@@ -52,10 +52,7 @@
     padding: .2rem;
 }
 .contato__contatos ul li:hover{
-    background: var(--color-gradient);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;  
+    color: rgb(255, 195, 177);
 }
 
 @media (max-width: 750px) {
