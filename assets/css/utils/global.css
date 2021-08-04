@@ -54,3 +54,14 @@ html {
     opacity: 1;
     transform: translateX(0);
 }
+
+.mensagem {
+    font-size: .7rem;
+    color: white;
+    flex: 1;
+    margin-left: 3rem;
+}
+
+.mensagem span {
+    color: #61DAFB; font-weight: 700;
+}

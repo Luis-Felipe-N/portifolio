@@ -1,6 +1,8 @@
-const newElement = ( TagName, className = false ) => {
+const newElement = ( TagName, classNames = false ) => {
     const elem = document.createElement( TagName )
-    className ? elem.classList.add( className ) : elem
+    if (classNames) {
+        classNames.forEach(className => elem.classList.add(className))
+    }
     return elem
 }
  
@@ -12,32 +14,34 @@ export default function criarCards( projetos ) {
         const { title, link, text, image, technologies } = projeto
 
         // Card Projeto
-        let cardProjeto = newElement('div', 'projeto');
+        let cardProjeto = newElement('div',['projeto'])
         cardProjeto.classList.add('anima-left')
         cardProjeto.setAttribute( 'data-js', 'anima-left')
 
         // Parte da imagem
-        let projetoImg = newElement('div', 'projeto__img');
+        let projetoImg = newElement('div',['projeto__img'])
         projetoImg.style.backgroundImage = `url(${image})`
 
         // Parte da descrição
-        let projetoDescri = newElement('div','projeto__descricao')
+        let projetoDescri = newElement('div',['projeto__descricao'])
 
-        let containerTitle = newElement('h3', 'projeto__descricao-title')
+        let containerTitle = newElement('h3',[ 'projeto__descricao-title'])
         
         
-        let titleCard = newElement('a', 'projeto__descricao-link')
+        let titleCard = newElement('a', ['projeto__descricao-link'])
         titleCard.innerText = title
         titleCard.setAttribute('href', link)
         titleCard.setAttribute('target', '_blank')
+        const iconArrow = newElement('i', ['fas', 'fa-arrow-right'])
+        titleCard.append(iconArrow)
         containerTitle.appendChild(titleCard)
         projetoDescri.appendChild(containerTitle)
         
-        let descri = newElement('p','projeto__descricao-text')
+        let descri = newElement('p',['projeto__descricao-text'])
         descri.innerHTML = text
         projetoDescri.appendChild(descri)
 
-        let containerLinguagens = newElement('div', 'projeto__descricao-linguagens')
+        let containerLinguagens = newElement('div',[ 'projeto__descricao-linguagens'])
         let spansLinguagens = criarNomeLinguagens(technologies)
         spansLinguagens.forEach(span => {
             containerLinguagens.appendChild( span )
@@ -52,7 +56,7 @@ export default function criarCards( projetos ) {
     
     function criarNomeLinguagens( linguagens ) {
         const spanLinguagens = linguagens.map( linguagem => {
-            const span = newElement('span', `c-${linguagem}`)
+            const span = newElement('span', [`c-${linguagem}`])
             span.textContent = '#' + linguagem
             return span
         })
