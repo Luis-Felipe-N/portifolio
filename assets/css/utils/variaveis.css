@@ -6,6 +6,7 @@
     --color-html: #E44B27;
     --color-css: #254cde;
     --color-python: #366f9e;
+    --color-react: #61DAFB;
 
     --color-gradient: linear-gradient(to right, #f12711, #ff8800);
 }
@@ -29,4 +30,8 @@
 }
 .c-scss {
     --color-linguagem: #cf649a;
+}
+
+.c-react {
+    --color-linguagem: #61DAFB;
 }
