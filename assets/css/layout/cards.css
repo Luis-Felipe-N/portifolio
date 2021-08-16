@@ -74,7 +74,9 @@
 
 .projeto__descricao-linguagens {
     display: flex;
-    gap: 2rem;
+    /* gap: 1rem;
+     */
+     justify-content: space-evenly;
 }
 
 .projeto__descricao-linguagens span {

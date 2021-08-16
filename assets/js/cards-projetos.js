@@ -98,15 +98,22 @@ const tdProjetos = [
         link: 'https://letmeask-f1b55.web.app/',
         text: 'Let me ask foi um feito no <a target="_blank" rel="noopener noreferrer"  href="https://letmeask-f1b55.web.app/"> Next Level Week </a> onde aprendemos a criar uma plataforma de comentários.',
         image: 'https://github.com/Luis-Felipe-N/letmeask-1/raw/master/.github/cover.svg',
-        technologies: ['scss', 'html', 'react']
+        technologies: ['scss', 'react']
     },
     {
         title: 'iFun',
         link: 'https://ifun-65e7a.firebaseapp.com/',
         text: 'iFun é um uma rede social de meme. Projeto criado para reforça o que aprendi no <span style="color: #866EE6; font-weight: 700">#NLW</span>.',
         image: 'https://github.com/Luis-Felipe-N/ifun/raw/main/src/assets/image/image-example.svg',
-        technologies: ['scss', 'html', 'react']
-    }
+        technologies: ['scss', 'react']
+    },
+    {   
+        title: 'Blog Tech',
+        link: 'https://blog-luis.vercel.app/',
+        text: 'Blog Tech é um blog onde irei postar dicas de CSS, HTML e JS, implementei login e comentários dos leitores.',
+        image: 'https://github.com/Luis-Felipe-N/blog/raw/main/public/blog-thumb.svg',
+        technologies: ['next', 'dato_cms', 'firebase']
+    },
 ]
 
 const quantCards = tdProjetos.length

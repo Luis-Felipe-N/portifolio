@@ -35,3 +35,15 @@
 .c-react {
     --color-linguagem: #61DAFB;
 }
+
+.c-next {
+    --color-linguagem: #ffffff;
+}
+
+.c-dato_cms {
+    --color-linguagem: #f37862;
+}
+
+.c-firebase {
+    --color-linguagem: #FFCA30;
+}
