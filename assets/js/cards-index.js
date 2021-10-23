@@ -30,3 +30,21 @@ const tdProjetos = [
 const quantCards = tdProjetos.length
 
 criarCards( tdProjetos , quantCards )
+
+// var cartasJogador = []
+
+// // apos sortear
+// cartasJogador.push(cartasJogadorSorteada)
+
+// // apos ganhar da maquina
+// cartasJogador.push(cartaMaquina)
+
+// // mostras minhas cartas
+// console.log('Suas cartas são: ')
+// cartasJogador.forEach(cartaJogador => {
+//     console.log(cartaJogador.nome)
+// });
+
+// // quando perder
+// cartasMaquina.push(cartaJogador)
+// cartasJogador.slice(cartaJogador) // removendo da lista a carta que o jogador acabou de perder 
